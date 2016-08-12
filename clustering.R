@@ -73,6 +73,10 @@ print(cl.km)
 # * Visualize these clusters using  function clusplot() from the cluster library
 # * Would you consider this a good clustering?
 
+library(cluster)
+clusplot(wine, fit.km$cluster)
+
 library(flexclust)
 print(randIndex(cl.km))
+
 
